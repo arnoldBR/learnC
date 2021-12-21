@@ -13,11 +13,11 @@ main()
 
     fahr = lower;
 
-    printf("%3s %6s", "Fahrenheit", "Celsius");
+    printf("%9s %9s", "Fahrenheit", "Celsius\n"); //header
 
     while (fahr <= upper) {
         celsius = (5.0/9.0) * (fahr-32.0);
-        printf("%3.0f %6.1f\n", fahr, celsius);
+        printf("%9.0f %9.1f\n", fahr, celsius);
         /* 6.1 espaço de 6 caracteres, com um digito apos a virgula */
         fahr = fahr + step;
     }
